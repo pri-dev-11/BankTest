@@ -1,4 +1,4 @@
-//asasasa
+
 using Bank1;
 using NUnit.Framework;
 using System;
@@ -28,7 +28,7 @@ namespace TestBank
             var otherAccount = new Account();
             account.TransferFundsTo(otherAccount, 500);
             Assert.AreEqual(1000, account.Balance);
-            Assert.AreEqual(500, otherAccount.Balance);
+            Assert.AreEqual(1500, otherAccount.Balance);
         }
 
         [Test]
